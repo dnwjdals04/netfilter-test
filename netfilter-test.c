@@ -127,8 +127,7 @@ static uint32_t print_pkt (struct nfq_data *tb)
 
 	return id;
 }
-	
-char num;
+
 char *host;
 
 static int cb(struct nfq_q_handle *qh, struct nfgenmsg *nfmsg,
@@ -184,7 +183,6 @@ int main(int argc, char **argv)
 		return 0;
 	}
 
-	num = argc;
 	host = argv[1];
 
 	printf("opening library handle\n");
